@@ -1,4 +1,5 @@
-Hacking the HQ app
+Hacking the HQ App
+===================
 
 Idea based on this blog post:
 https://applecrazy.github.io/blog/posts/protect-trivia-from-bots/
@@ -27,5 +28,5 @@ Using tesseract to extract text from image
 
 Now you get a semi-working question to google the answer.
 
-Next, we will capture the answers and attempt to match the answer with the question.
+Next, we will capture the answers and attempt to match the answer with the question -still thinking about what tools or technologies I should use.
 
