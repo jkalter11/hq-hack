@@ -11,9 +11,11 @@ tr '\n' ' ' < output.txt > question.txt
 
 value=$(<question.txt)
 
-query=${value%?*}
+temp_query=`echo $value | cut -f1 -d"?"`
 
-echo "$query"
+echo $temp_query
+
+query=`echo ${temp_query// /+}`
 
 #Search on Google
-#firefox google.com/search?q=$query
+firefox google.com/search?q=$query
